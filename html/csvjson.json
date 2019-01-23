@@ -1,0 +1,126 @@
+[
+  {
+    "Platform": 2600,
+    "Global_Sales": 8313
+  },
+  {
+    "Platform": "3DO",
+    "Global_Sales": 10
+  },
+  {
+    "Platform": "3DS",
+    "Global_Sales": 22615
+  },
+  {
+    "Platform": "DC",
+    "Global_Sales": 1417
+  },
+  {
+    "Platform": "DS",
+    "Global_Sales": 72304
+  },
+  {
+    "Platform": "GB",
+    "Global_Sales": 22422
+  },
+  {
+    "Platform": "GBA",
+    "Global_Sales": 29438
+  },
+  {
+    "Platform": "GC",
+    "Global_Sales": 17470
+  },
+  {
+    "Platform": "GEN",
+    "Global_Sales": 2844
+  },
+  {
+    "Platform": "GG",
+    "Global_Sales": 4
+  },
+  {
+    "Platform": "N64",
+    "Global_Sales": 19530
+  },
+  {
+    "Platform": "NES",
+    "Global_Sales": 22956
+  },
+  {
+    "Platform": "NG",
+    "Global_Sales": 108
+  },
+  {
+    "Platform": "PC",
+    "Global_Sales": 24932
+  },
+  {
+    "Platform": "PCFX",
+    "Global_Sales": 3
+  },
+  {
+    "Platform": "PS",
+    "Global_Sales": 67695
+  },
+  {
+    "Platform": "PS2",
+    "Global_Sales": 111794
+  },
+  {
+    "Platform": "PS3",
+    "Global_Sales": 86275
+  },
+  {
+    "Platform": "PS4",
+    "Global_Sales": 29767
+  },
+  {
+    "Platform": "PSP",
+    "Global_Sales": 27126
+  },
+  {
+    "Platform": "PSV",
+    "Global_Sales": 4827
+  },
+  {
+    "Platform": "SAT",
+    "Global_Sales": 3062
+  },
+  {
+    "Platform": "SCD",
+    "Global_Sales": 52
+  },
+  {
+    "Platform": "SNES",
+    "Global_Sales": 16675
+  },
+  {
+    "Platform": "TG16",
+    "Global_Sales": 16
+  },
+  {
+    "Platform": "Wii",
+    "Global_Sales": 84333
+  },
+  {
+    "Platform": "WiiU",
+    "Global_Sales": 7739
+  },
+  {
+    "Platform": "WS",
+    "Global_Sales": 142
+  },
+  {
+    "Platform": "X360",
+    "Global_Sales": 89009
+  },
+  {
+    "Platform": "XB",
+    "Global_Sales": 23855
+  },
+  {
+    "Platform": "XOne",
+    "Global_Sales": 14720
+  }
+]

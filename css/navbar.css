@@ -1,0 +1,85 @@
+.navbar,
+main {
+	background-color: #FFF;
+}
+
+.navbar-header .navbar-brand {
+	display: none;
+}
+.navbar-header {
+    float: none !important;
+	position: relative;
+	background: #F5F7FA;
+	border-bottom: 1px solid #E6E9ED;
+	z-index: 0;
+}
+.navbar-header li,
+.navbar-header a {
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+}
+
+.navbar .container {
+	display: block;
+}
+
+.navbar-header .navbar-brand {
+	display: inline-block;
+}
+.navbar-collapse .navbar-brand {
+	display: none;
+}
+
+.navbar-collapse.collapse {
+	display: none !important;
+}
+
+.navbar-collapse.collapse.in {
+	display: block !important;
+}
+
+.navbar .container {
+	display: block;
+}
+
+.navbar .social,
+.navbar .info {
+    display: none;
+}
+
+.navbar-header {
+	background: #FFF;
+    padding: 25px 0;
+}
+
+
+
+.navbar-custom{
+	background-color:#cc6699;
+	border-color:#cc6699;
+
+}
+
+.navbar-custom li a{
+	color: black;
+	text-decoration-color: white;
+}
+
+.navbar-custom button:hover{
+	background-color: #cc3399;
+}
+
+.navbar-custom button:active{
+	vertical-align: top;
+    padding: 8px 13px 6px;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color:white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}

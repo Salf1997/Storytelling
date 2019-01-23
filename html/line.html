@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>dc.js - Line Chart Example</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/dc.css"/>
+</head>
+<body>
+
+<div class="container">
+<script type="text/javascript" src="header.js"></script>
+<div id="test"></div>
+
+    <script type="text/javascript" src="../js/promise-polyfill.js"></script>
+    <script type="text/javascript" src="../js/fetch.umd.js"></script>
+<script type="text/javascript" src="../js/d3.js"></script>
+<script type="text/javascript" src="../js/crossfilter.js"></script>
+<script type="text/javascript" src="../js/dc.js"></script>
+<script type="text/javascript">
+
+var chart = dc.lineChart("#test");
+d3.csv("nintendo1.csv").then(function(experiments) {
+
+  experiments.forEach(function(x) {
+    x.Nintendo = +x.Nintendo;
+  });
+
+  var ndx                 = crossfilter(experiments),
+      dimension        = ndx.dimension(function(d) {return +d.Year;}),
+      grupo       = dimension.group().reduceSum(function(d) {return d.Nintendo;});
+
+  chart
+    .width(768)
+    .height(480)
+    .x(d3.scaleLinear().domain([1984,2016]))
+    .curve(d3.curveStepBefore)
+    .renderArea(true)
+    .brushOn(false)
+    .renderDataPoints(true)
+    .clipPadding(10)
+    .yAxisLabel("This is Y Axis!")
+    .dimension(dimension)
+    .group(grupo);
+    
+
+  chart.render();
+
+});
+
+</script>
+
+</div>
+</body>
+</html>
