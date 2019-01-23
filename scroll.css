@@ -1,0 +1,10 @@
+#seccion {
+  height: 100vh;
+  overflow: hidden;
+
+}
+.container_title2{
+	background-color: red;
+}
+
+#seccion section { height: 100vh; }
