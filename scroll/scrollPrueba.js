@@ -1,11 +1,11 @@
 $(function() {
-          $.scrollify({
-    section : "section",
-    sectionName : "section-name",
+	$.scrollify({
+    section : "seccion",
+    //sectionName : "section-name",
     interstitialSection : "",
     easing: "easeOutExpo",
     scrollSpeed: 1100,
-    offset : 0,
+    offset : 100,
     scrollbars: true,
     standardScrollElements: "",
     setHeights: true,
@@ -17,6 +17,4 @@ $(function() {
     afterResize:function() {},
     afterRender:function() {}
   });
-        });
-
-  
+});

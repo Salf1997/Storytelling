@@ -11,29 +11,24 @@
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <!--<link rel="stylesheet" type="text/css" href="css/style.css"> NO VOLVER A DESCOMENTAR-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" type="text/css" href="scroll.css">
-=======
+    <link rel="stylesheet" type="text/css" href="scroll/scroll.css">
     <link rel="stylesheet" type="text/css" href="css/dc.css"/>
     <link rel="stylesheet" type="text/css" href="estilo.css">
->>>>>>> e591771581481e6205b190db8ad9b376c5dcec97
+    <link rel="json" type="json" href="scroll/jquery.scrollify.json">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-    <script src="scrollPrueba.js"></script> 
 
 </head>
 <body>
-  <header>
-    <div class="navbar">
+<div class="navbar">
       <div class="navbar-header">
         <div class="container">
-          
-          <ul class="info pull-left">
-            <li><span class="glyphicon glyphicon-user"></span> Sof&iacutea L&oacutepez</li>
-            <li><span class="glyphicon glyphicon-user"></span> Adri&aacuten Garc&iacutea</li>
-          </ul><!-- /.info -->
+            <p><strong style="color: red">Autores:</strong> Adri&aacuten Garbiel Garc&iacutea Ortiz y Sof&iacutea Alejandra L&oacutepez Fern&aacutendez</p>
         </div>
       </div>
     </div>
+
+    <section id="seccion" class="container">
+        
     <div class="container"> 
           <div class = "row">
             <div id='intro'>
@@ -46,27 +41,24 @@
                             <image class="center-block" src= "images/nintendo-logo.png" width =600 />
                             <p class="small">a trav&eacutes de </p>
                             <p class="big">la Historia</p>
+                            <button class="small" onclick="empezar()">Empecemos...</button>
                         </div> 
                     </div>  
-                    <button id="boton_empezar" onclick="empezar()">Venga venga</button>
                 </div>
             </div>      
           </div>
+    </section>
 
-  </header>
-<<<<<<< HEAD
     <section id="seccion" class="container title">Prueba grafico de barras
       <div id="graficaBarrasVentas"></div>
     </section>
     <section id="seccion" class="container_title2">Prueba grafico de lineas
       <div id="graficaCompositeLineas"></div>
-=======
     <section class="container title">Prueba grafico de barras
         <div id="graficaBarrasVentas"></div>
     </section>
     <section id="seccion1" class="container title">Prueba grafico de lineas
         <div id="graficaCompositeLineas"></div>
->>>>>>> e591771581481e6205b190db8ad9b376c5dcec97
     </section>
     <section id="seccion" class="container title">Prueba secciones 1
     </section>
@@ -76,12 +68,34 @@
     <script type="text/javascript" src="js/fetch.umd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="jquery.scrollify.js"></script>
     <script type="text/javascript" src="js/d3.js"></script>
     <script type="text/javascript" src="js/crossfilter.js"></script>
     <script type="text/javascript" src="js/dc.js"></script>
     <script type="text/javascript" src="js/composite-chart.js"></script>
     <script type="text/javascript" src="intento.js"></script>
+    <script type="text/javascript" src="scroll/jquery.scrollify.js"></script>
+<script>
+        $(function(){
+          $.scrollify({
+    section : "section",
+    /*sectionName : "section-name",*/
+    interstitialSection : "",
+    easing: "easeOutExpo",
+    scrollSpeed: 1100,
+    offset : 0,
+    scrollbars: true,
+    standardScrollElements: "",
+    setHeights: true,
+    overflowScroll: true,
+    updateHash: true,
+    touchScroll:true,
+    before:function() {},
+    after:function() {},
+    afterResize:function() {},
+    afterRender:function() {}
+  });
+        });
+    </script>
    
 </body>
 </html>
