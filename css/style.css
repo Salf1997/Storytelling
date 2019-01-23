@@ -1,4 +1,4 @@
-/* Fuentes */
+/* Fuentes 
 
 @font-face {
   font-family: 'Atlas Grotesk Web';
@@ -18,12 +18,12 @@
 
 /* Estilos */
 
-body {
+/*body {
     background: white;
     font-family: 'Calibri';
 }
 
-.white-wrapper {
+/*.white-wrapper {
     width: 100%;
     background: white;
     position: relative;
@@ -34,7 +34,7 @@ body {
     font-family: "Calibri";
 }
 
-.opening-title {
+/*.opening-title {
     font-size: 50px;
     font-family: 'Canela Web';
     text-align: center;
@@ -48,7 +48,7 @@ body {
     letter-spacing: 6px;
 }
 
-.opening-title .small {
+/*.opening-title .small {
     font-size: 30px;
     margin: 0;
     line-height: 30px;
@@ -61,9 +61,9 @@ body {
     font-weight: 60;
     font-size: 50px;
     line-height: 1.5;
-}
+}*/
 
-.byline {
+/*.byline {
     font-size: 12px;
     text-align: center;
     font-family: 'Atlas Grotesk Web';
@@ -92,10 +92,10 @@ body {
 
 .byline-item-date {
     margin-right: 10px;
-    border-right: 1px solid #ccc;
+   /* border-right: 1px solid #ccc;
     padding-right: 10px;
     font-weight: 500;
-    color: #309191;
+    /*color: #309191;
 }
 
 .byline{
@@ -123,7 +123,7 @@ body {
 .prose-wrapper {
     max-width: 75%;
     margin: 0 auto;
-    /* display: none; */
+    /* display: none; 
     z-index: 1000;
     position: relative;
     text-align: justify;
@@ -138,16 +138,16 @@ body {
     margin-right: .1em;
     height: .7em;
     font-weight: 700;
-/*    color: #309191*/
+/*    color: #309191
 }
 
 .divider {
-    background: #309191;
+    /*background: #309191;
     height: 2px;
     width: 60%;
     margin: 0 auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;*/
+    margin-bottom: 2rem;
 }
 
 .container {
@@ -171,7 +171,7 @@ body {
   font-family: "Calibri";
   font-size: 40px;
   font-weight: bold;
-  color: #309191;
+  /*color: #309191;
   margin-bottom: 10px;
 }
 
@@ -181,7 +181,7 @@ body {
   font-size: 18px;
   line-height: 23px;
   color:black;
-  background: #f3f3f3;
+  /*background: #f3f3f3;
   border-left: 3px solid #309191;
   padding: 1rem 1.5rem;
   text-align: justify;
@@ -191,7 +191,7 @@ body {
   font-family: "Calibri";
   font-size: 20px;
   font-weight: bold;
-  color: #309191;
+  /*color: #309191;
   margin-bottom: 2px;
 }
 
@@ -224,12 +224,12 @@ body {
 }
 
 .highlight {
-  fill: #008080;
+  /*fill: #008080;
   font-weight: bold;
 }
 
 .cough-arrow {
-  stroke: #000;
+  /*stroke: #000;
   stroke-width: 4px;
 }
 
@@ -241,13 +241,13 @@ body {
 
 .textStrong {
   font-size: 18px;
-  color: #309191;
+  /*color: #309191;
 }
 
 a {
     font-size: 11px;
     font-family: 'Atlas Grotesk Web';
-    color: #309191
+    /*color: #309191
 }
 
 th {
@@ -256,7 +256,7 @@ th {
     font-weight: normal;
     vertical-align: inherit;
     text-align: center;
-    background: rgba(48,145,145,0.7);
+    /*background: rgba(48,145,145,0.7);
     color:white;
 }
 
