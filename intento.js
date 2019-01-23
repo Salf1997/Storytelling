@@ -1,7 +1,7 @@
 
 crearCompositeLineal();
 crearBarChartVentasTotales();
-
+composicion();
 
 function empezar(){
 	var elmnt = document.getElementById("graficaCompositeLineas");
@@ -50,8 +50,6 @@ function crearCompositeLineal(){
 	      grupoMic       = dimension.group().reduceSum(function(d) {return d.MicrosoftGS;})
 	      grupoSony       = dimension.group().reduceSum(function(d) {return d.SonyCE;})
 	      grupoSega       = dimension.group().reduceSum(function(d) {return d.Sega;});
-
-
 	*/
 		chart2
 	    .width(768)
