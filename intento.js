@@ -72,7 +72,7 @@ function crearCompositeLineal(){
 			    .colors('green')
 			    .group(grupoMic, "Microsoft Game Studio")
 		    ])
-			.brushOn(false)
+			.brushOn(true)
 	        .render();
 
 		});
