@@ -1,12 +1,6 @@
 
 crearCompositeLineal();
 crearBarChartVentasTotales();
-composicion();
-
-function empezar(){
-	var elmnt = document.getElementById("graficaCompositeLineas");
-  	elmnt.scrollIntoView();
-}
 
 function crearBarChartVentasTotales(){
 	var chart = dc.barChart('#graficaBarrasVentas');

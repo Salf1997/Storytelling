@@ -9,7 +9,13 @@
 <body>
 
 <div class="container">
-<script type="text/javascript" src="header.js"></script>
+    <h4>Please select your gender.</h4>
+    <p> 
+        <label><input type="radio" name="gender" value="Action">Action</label> 
+        <label><input type="radio" name="gender" value="Puzzle">Puzzle</label>
+    </p>
+    <p><input type="button" value="Get Value"></p>
+
 <div id="test"></div>
 
     <script type="text/javascript" src="../js/promise-polyfill.js"></script>
@@ -17,15 +23,58 @@
 <script type="text/javascript" src="../js/d3.js"></script>
 <script type="text/javascript" src="../js/crossfilter.js"></script>
 <script type="text/javascript" src="../js/dc.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
+
+
+
 
   var chart = dc.barChart('#test');
 
-  d3.json('ventas_total.json').then(function(counts) {
-      var ndx            = crossfilter(counts),
-          fruitDimension = ndx.dimension(function(d) {return d.Empresa;}),
-          sumGroup       = fruitDimension.group().reduceSum(function(d) {return d.Global_Sales;});
 
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+            var radioValue = $("input[name='gender']:checked").val();
+            if(radioValue){
+                alert("Your are a - " + radioValue);
+                barra(radioValue);
+            }
+        });
+        
+    });
+
+
+function barra(valor){
+  d3.json('nintendo3.json').then(function(counts) {
+      var ndx            = crossfilter(counts),
+          fruitDimension = ndx.dimension(function(d) {return d.Year;});
+
+      var sumGroup;
+      if (valor=='Action') {
+          sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Action;});
+      } if (valor=='Puzzle') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Puzzle;});
+      } if (valor=='Adventure') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Adventure;});
+      } if (valor=='Misc') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Misc;});
+      } if (valor=='Fighting') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Fighting;});
+      } if (valor=='Platform') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Platform;});
+      } if (valor=='Racing') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Racing;});
+      } if (valor=='RolePlaying') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.RolePlaying;});
+      } if (valor=='Shooter') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Shooter;});
+      } if (valor=='Simulation') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Simulation;});
+      } if (valor=='Sports') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Sports;});
+      } if (valor=='Strategy') {
+        sumGroup = fruitDimension.group().reduceSum(function(d) {return d.Strategy;});
+      } 
       chart
           .width(768)
           .height(380)
@@ -39,6 +88,8 @@
 
       chart.render();
   });
+}
+  
 
 </script>
 

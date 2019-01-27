@@ -18,38 +18,161 @@
 
 </head>
 <body>
-<div class="navbar">
-      <div class="navbar-header">
-        <div class="container">
-            <p><strong style="color: red">Autores:</strong> Adri&aacuten Garbiel Garc&iacutea Ortiz y Sof&iacutea Alejandra L&oacutepez Fern&aacutendez</p>
-        </div>
-      </div>
-    </div>
+    <audio id="myAudio">
+        <source src="images/coin.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
 
-    <section id="seccion" class="container">
-        
-    <div class="container"> 
+    <div class="container">       
+        <section id="inicio">
           <div class = "row">
             <div id='intro'>
-                <div class="white-wrapper">
+                <div>
                     <div class="intro-section">
                         <div class="opening-title">
-                            <p class="small">Un</p>
-                            <p class="big">An&aacutelisis</p>
-                            <p class="small">de</p>
-                            <image class="center-block" src= "images/nintendo-logo.png" width =600 />
-                            <p class="small">a trav&eacutes de </p>
+                            <p class="small">Los</p>
+                            <p class="big">Videojuegos</p>
+                            <!--<p class="small">de</p>
+                            <image class="center-block" src= "images/nintendo-logo.png" width =600 />-->
+                            <p class="small">a traves de </p>
                             <p class="big">la Historia</p>
-                            <button class="small" onclick="empezar()">Empecemos...</button>
                         </div> 
+                        <div class="opening-title">
+                            <p class="small"><strong style="color: red">Autores:</strong> Adrian Garcia y Sofia Lopez</p>
+                            <p class="big"><br>Para empezar</p>
+                            <button class="small" onclick="empezar()">Insert Coin <img src="images/coin.ico" height="50" width="50"></button>
+                        </div>
+                        
                     </div>  
                 </div>
             </div>      
           </div>
-    </section>
+        </section>
 
-    <section id="seccion" class="container title">Prueba grafico de barras
-      <div id="graficaBarrasVentas"></div>
+        <section id="eleccion">
+            <h1 style="color: blue;">Primero debes escoger el camino que quieres recorrer...</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>It's dangerous to go alone, take this</h4>
+                    <h5>1980 a 1990</h5>
+                    <div><img src="images/801.jpeg" class="img-init"><img src="images/802.jpeg" class="img-init"></div>
+                    <button class="btn-vamos" onclick="llevame('tramo1')">Vamos!</button>
+                </div>
+                <div class="col-md-6">
+                    <h4>It's a me, Mario</h4>
+                    <h5>1990 a 2000</h5>
+                    <div><img src="images/90.jpeg" class="img-init"></div>
+                    <button class="btn-vamos" onclick="llevame('tramo2')">Vamos!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Touching is good</h4>
+                    <h5>2000 a 2006</h5>
+                    <div><img src="images/00.jpeg" class="img-init" style="  height: 50%; width: 50%;"></div>
+                    <button class="btn-vamos" onclick="llevame('tramo3')">Vamos!</button>
+                </div>
+                <div class="col-md-6">
+                    <h4>You say you want a Revolution?</h4>
+                    <h5>2006 a 2016</h5>
+                    <div><img src="images/16.jpeg" class="img-init" style="  height: 50%; width: 50%;"></div>
+                    <button class="btn-vamos" onclick="llevame('tramo4')">Vamos!</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Actualidad</h4>
+                    <h5>2016...</h5>
+                    <div><img src="images/17.jpeg" class="img-init" style="  height: 50%; width: 50%;"></div>
+                    <button class="btn-vamos" onclick="llevame('tramo1')">Vamos!</button>
+                </div>
+                <div class="col-md-6">
+                    <h4>Par favar! Quiero verlo todo!</h4>
+                    <div><img src="images/todo.jpg" class="img-init" style="  height: 50%; width: 50%;"></div>
+                    <button class="btn-vamos" onclick="llevame('tramo1')">Vamos!</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tramo1">
+            t1
+        </section>
+
+        <section id="tramo2">
+            <div class="row">
+            <h1>
+                Ventas de Nintendo, Sega y Sony a nivel mundial
+            </h1>
+            <div id="ventascomp_sony_nin_sega" class="col-md"></div>
+            <div class="col-md">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </section>
+        <section id="tramo22">
+            <div class="row">
+            <h1>
+                Ventas de Nintendo, Sega y Sony en Japon
+            </h1>
+            <div id="ventascomp_sony_nin_sega_jap" class="col-md"></div>
+            <div class="col-md">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </section>
+        <section id="tramo23">
+            <div class="row">
+            <h1>
+                Ventas por genero de:
+            </h1>
+            <p> 
+                <label><input type="radio" name="gender" value="Action">Action</label> 
+                <label><input type="radio" name="gender" value="Puzzle">Puzzle</label>
+                <label><input type="radio" name="gender" value="Adventure">Adventure</label>
+            </p>
+            <p>
+                <label><input type="radio" name="gender" value="Fighting">Fighting</label>
+                <label><input type="radio" name="gender" value="Misc">Misc</label>
+                <label><input type="radio" name="gender" value="Platform">Platform</label>
+            </p>
+            <p>
+                <label><input type="radio" name="gender" value="Racing">Racing</label>
+                <label><input type="radio" name="gender" value="RolePlaying">Role - Playing</label>
+                <label><input type="radio" name="gender" value="Shooter">Shooter</label>
+            </p>
+            <p>
+                <label><input type="radio" name="gender" value="Simulation">Simulation</label>
+                <label><input type="radio" name="gender" value="Sports">Sports</label>
+                <label><input type="radio" name="gender" value="Strategy">Strategy</label>
+
+            </p>
+            <p><input type="button" value="Adelante"></p>
+
+            <div id="graph_barras_ventas_genero_nintendo" class="col-md">
+                <svg width="960" height="500"></svg>
+            </div>
+            <div class="col-md">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </section>
+
+        <section id="tramo3">
+            t3
+        </section>
+
+        <section id="tramo4">
+            t4
+        </section>
+
+    <section  class="container">
+        <div class="row">
+            <h1>
+                Prueba grafico de barras
+            </h1>
+            <div id="graficaBarrasVentas" class="col-md"></div>
+            <div class="col-md">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+      
     </section>
     <section id="seccion" class="container_title2">Prueba grafico de lineas
       <div id="graficaCompositeLineas"></div>
@@ -61,6 +184,11 @@
     </section>
     <section id="seccion" class="container title">Prueba secciones 1
     </section>
+
+
+    </div>
+
+    
 
 <!-- JAVASCRIPTS -->
     <script type="text/javascript" src="js/promise-polyfill.js"></script>
@@ -74,6 +202,8 @@
     <script type="text/javascript" src="intento.js"></script>
     <script type="text/javascript" src="scroll/jquery.scrollify.js"></script>
     <script type="text/javascript" src="scroll/scrollify.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/graficas.js"></script>
 
    
 </body>
