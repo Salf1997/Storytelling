@@ -1,4 +1,18 @@
 graphLineSec2();
+$(document).ready(function(){
+  barra("Nintendo","Action");
+    $("input[type='button']").click(function(){
+            var radioValue = $("input[name='plataforma']:checked").val();
+            if(radioValue){
+                $(document).on('change','#generoNintendo',function(){
+                  var valor = $('#generoNintendo>option:selected').text();
+                  barra(radioValue,valor);
+                });
+            }
+    });  
+});
+
+
 
 function graphLineSec2(){
   var linea1 = dc.compositeChart("#ventascomp_sony_nin_sega");
@@ -66,23 +80,11 @@ function graphLineSec2(){
       });
 }
 
-var barra_nintendo_sec2 = dc.barChart('#graph_barras_ventas_genero_nintendo');
+var barra_nintendo_sec2 = dc.barChart('#graph_barras_ventas_genero_sec2');
 
-
-$(document).ready(function(){
-    $("input[type='button']").click(function(){
-        var radioValue = $("input[name='gender']:checked").val();
-        if(radioValue){
-            //alert("Your are a - " + radioValue);
-            barra(radioValue);
-        }
-    });
-    
-});
-
-
-function barra(valor){
-  d3.json('data/90-00/nintendo_902000_ventas_generos.json').then(function(counts) {
+function barra(json,valor){
+  console.log("Este es el valor del select: " + valor + "y el valor del json: " +json);
+  d3.json('data/90-00/'+json+'_902000_ventas_generos.json').then(function(counts) {
       var ndx            = crossfilter(counts),
           fruitDimension = ndx.dimension(function(d) {return d.Year;});
 

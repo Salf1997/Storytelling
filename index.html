@@ -84,7 +84,7 @@
                     <h4>Actualidad</h4>
                     <h5>2016...</h5>
                     <div><img src="images/17.jpeg" class="img-init" style="  height: 50%; width: 50%;"></div>
-                    <button class="btn-vamos" onclick="llevame('tramo1')">Vamos!</button>
+                    <button class="btn-vamos" onclick="llevame('tramo5')">Vamos!</button>
                 </div>
                 <div class="col-md-6">
                     <h4>Par favar! Quiero verlo todo!</h4>
@@ -95,6 +95,7 @@
         </section>
 
         <section id="tramo1">
+<<<<<<< HEAD
             <div class="1980-1990">
                 <div class="row">
                     <div class="col-md-10">
@@ -155,26 +156,55 @@
                     </div>
                 </div>
             </div>
+=======
+            <div class="row">
+                <div class="intro-section">
+                    <div class="opening-title">
+                        <p class="small">De 1980 al 1990</p>
+                    </div>
+                </div>
+            </div>
+            
+>>>>>>> fce0dbd5b1677002404b982e70f15f92e8d981f1
         </section>
 
         <section id="tramo2">
             <div class="row">
-            <h1>
-                Ventas de Nintendo, Sega y Sony a nivel mundial
-            </h1>
-            <div id="ventascomp_sony_nin_sega" class="col-md"></div>
-            <div class="col-md">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="intro-section">
+                    <div class="opening-title">
+                        <p class="small">De 1990 al 2000</p>
+                    </div>
+                </div>
+                <h1>
+                    Ventas de Nintendo, Sega y Sony a nivel mundial
+                </h1>
+                <div id="ventascomp_sony_nin_sega" class="col-md"></div>
+                <div class="col-md">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                
+                
+            </div>
+            <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-2">
+                    <button class="previous">&laquo; Anterior </button>
+                </div>
+                <div class="col-md-2">
+                    <button class="next"> Siguiente &raquo; </button>
+                </div>
             </div>
         </section>
         <section id="tramo22">
             <div class="row">
-            <h1>
-                Ventas de Nintendo, Sega y Sony en Japon
-            </h1>
-            <div id="ventascomp_sony_nin_sega_jap" class="col-md"></div>
-            <div class="col-md">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h1>
+                    Ventas de Nintendo, Sega y Sony en Japon
+                </h1>
+                <div id="ventascomp_sony_nin_sega_jap" class="col-md"></div>
+                <div class="col-md">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
             </div>
         </section>
         <section id="tramo23">
@@ -182,43 +212,75 @@
             <h1>
                 Ventas por genero de:
             </h1>
-            <p> 
-                <label><input type="radio" name="gender" value="Action">Action</label> 
-                <label><input type="radio" name="gender" value="Puzzle">Puzzle</label>
-                <label><input type="radio" name="gender" value="Adventure">Adventure</label>
-            </p>
-            <p>
-                <label><input type="radio" name="gender" value="Fighting">Fighting</label>
-                <label><input type="radio" name="gender" value="Misc">Misc</label>
-                <label><input type="radio" name="gender" value="Platform">Platform</label>
-            </p>
-            <p>
-                <label><input type="radio" name="gender" value="Racing">Racing</label>
-                <label><input type="radio" name="gender" value="RolePlaying">Role - Playing</label>
-                <label><input type="radio" name="gender" value="Shooter">Shooter</label>
-            </p>
-            <p>
-                <label><input type="radio" name="gender" value="Simulation">Simulation</label>
-                <label><input type="radio" name="gender" value="Sports">Sports</label>
-                <label><input type="radio" name="gender" value="Strategy">Strategy</label>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <h6>1. Seleccione el desarrolador:</h6>
+                <p>
+                    <input type="radio" name="plataforma" value="Nintendo" checked="true">Nintendo
+                    <input type="radio" name="plataforma" value="Sega">Sega
+                    <input type="radio" name="plataforma" value="Sony">Sony
+                    <input type="button" name="plataforma" value="Ok">
+                </p>
 
-            </p>
-            <p><input type="button" value="Adelante"></p>
-
-            <div id="graph_barras_ventas_genero_nintendo" class="col-md">
-                <svg width="960" height="500"></svg>
+                <h6>2. Seleccione el g&eacutenero que quiere visualizar:</h6>
+                <select id="generoNintendo">
+                    <option type="radio" name="generoNin" value="Action">Action</option>
+                    <option type="radio" name="generoNin" value="Puzzle">Puzzle</option>
+                    <option type="radio" name="generoNin" value="Adventure">Adventure</option>
+                    <option type="radio" name="generoNin" value="Fighting">Fighting</option>
+                    <option type="radio" name="generoNin" value="Misc">Misc</option>
+                    <option type="radio" name="generoNin" value="Platform">Platform </option>
+                    <option type="radio" name="generoNin" value="Racing">Racing</option>
+                    <option type="radio" name="generoNin" value="RolePlaying">Role - Playing</option>
+                    <option type="radio" name="generoNin" value="Shooter">Shooter </option>
+                    <option type="radio" name="generoNin" value="Simulation">Simulation</option>
+                    <option type="radio" name="generoNin" value="Sports">Sports</option>
+                    <option type="radio" name="generoNin" value="Strategy">Strategy  </option>
+                </select>              
             </div>
-            <div class="col-md">
+            <div id="graph_barras_ventas_genero_sec2" class="col-md-7">
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
+            <div class="col-md-1"></div>
+        </div>
+            
         </section>
 
         <section id="tramo3">
-            t3
+            <div class="row">
+                <div class="intro-section">
+                    <div class="opening-title">
+                        <p class="small">Del 2000 al 2006</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="tramo4">
-            t4
+            <div class="row">
+                <div class="intro-section">
+                    <div class="opening-title">
+                        <p class="small">Del 2006 al 2016</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section id="tramo5">
+            <div class="row">
+                <div class="intro-section">
+                    <div class="opening-title">
+                        <p class="small">Del 2016 a la actualidad</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <section  class="container">
